@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PetMeds.master.cs" Inherits="CapstoneHw.PetMeds" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PetMeds</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+    <link rel="stylesheet" href="assets/css/Edit-Form.css">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+</head>
+
+<body style="background: var(--bs-secondary);">
+    <div class="container border rounded-circle border-dark shadow" style="max-width: 780px;">
+        <div class="row d-sm-flex" style="background: linear-gradient(rgb(85,255,255), white);height: 100px;border-radius: 30px;">
+            <div class="col-1 col-md-4 col-lg-2 d-lg-flex justify-content-lg-start" style="text-align: left;"><img class="rounded-circle border border-info shadow d-lg-flex justify-content-lg-start" src="assets/img/Paw.png" style="width: 100px;border-radius: 30px;"></div>
+            <div class="col-8 col-md-4 col-lg-8 offset-lg-0 d-sm-flex d-lg-flex justify-content-sm-end justify-content-lg-center">
+                <header class="text-center text-white bg-secondary border rounded-pill border-primary" style="width: 270px;"><br><h1>Pet Meds</h1></header>
+            </div>
+            <div class="col-1 col-md-4 col-lg-2 d-md-flex d-lg-flex justify-content-md-end justify-content-lg-start justify-content-xl-end" style="text-align: left;"><img class="rounded-circle border border-info shadow d-md-flex d-lg-flex justify-content-md-end justify-content-lg-start justify-content-xl-end" src="assets/img/Paw.png" style="width: 100px;border-radius: 30px;"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background: rgb(150,254,247);border-radius: 30px;height: 55px;">
+        <div class="container"><a class="navbar-brand" href="#" style="font-size: 24px;">Pet Meds</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item" style="border-radius: 20px;background: var(--bs-gray-500);"><a class="nav-link" href="Default.aspx" style="text-align: center;font-weight: bold;font-size: 11px;color: rgb(0,0,0);">Create Order</a></li>
+                    <li class="nav-item" style="border-radius: 20px;text-align: center;font-weight: bold;font-size: 11px;"><a class="nav-link" href="Customer.aspx" style="background: var(--bs-gray-500);border-radius: 20px;text-align: center;font-weight: bold;font-size: 11px;color: rgb(0,0,0);">Update Order</a></li>
+                    <li class="nav-item" style="background: var(--bs-gray-500);border-radius: 20px;text-align: center;font-weight: bold;font-size: 11px;"><a class="nav-link" href="CustomerService.aspx" style="background: var(--bs-gray-500);border-radius: 20px;text-align: center;font-weight: bold;font-size: 11px;color: rgb(0,0,0);">History</a></li>
+                    <li class="nav-item" style="background: var(--bs-gray-500);border-radius: 20px;text-align: center;font-weight: bold;font-size: 11px;"><a class="nav-link" href="Vet.aspx" style="background: var(--bs-gray-500);border-radius: 20px;text-align: center;font-weight: bold;font-size: 11px;color: rgb(0,0,0);">Settings</a></li>
+                </ul><span class="navbar-text actions" style="font-size: 18px;"> <a class="btn btn-light action-button" role="button" href="Default.aspx" style="font-size: 12px;background: rgb(0,0,0);">Sign In</a><a class="btn btn-light action-button" role="button" href="#" style="font-size: 12px;background: rgb(242,164,168);">Logout</a></span>
+            </div>
+        </div>
+    </nav>
+
+    <asp:contentplaceholder id="head" runat="server">
+    </asp:contentplaceholder>
+    <form id="form1" runat="server">
+        <div>
+            <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            </asp:contentplaceholder>
+        </div>
+    </form>
+
+    <footer class="footer-basic" style="text-align: center;font-weight: bold;background: rgb(225,225,225);height: 170px;margin: 11px;padding: 0px 0px;border-radius: 30px;">
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Create Order</a></li>
+            <li class="list-inline-item"><a href="#">Update Order</a></li>
+            <li class="list-inline-item"><a href="#">History</a></li>
+            <li class="list-inline-item"><a href="#">Settings</a></li>
+        </ul>
+        <p class="copyright">Pet Meds © 2021</p>
+    </footer>
+</body>
+
+
+</html>
