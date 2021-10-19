@@ -1,6 +1,6 @@
 .login-dark {
   height: 650px;
-  background: #475d62 url(../img/PawLove.jpg);
+  background: #6c757d;
   background-size: 275px;
   position: relative;
 }
@@ -8,7 +8,7 @@
 #loginForm  {
   max-width: 320px;
   width: 90%;
-  background-color: #1e2833;
+  background-color: #5f9ea0;
   padding: 40px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
@@ -20,10 +20,11 @@
 }
 
 .login-dark .illustration {
-  text-align: center;
-  padding: 15px 0 20px;
-  font-size: 100px;
-  color: #2980ef;
+    text-align: center;
+    background-color: #6c757d;
+    padding: 15px 0 20px;
+    font-size: 100px;
+    color: #2980ef;
 }
 
 .login-dark form .form-control {
